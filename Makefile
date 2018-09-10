@@ -1,8 +1,8 @@
 .PHONY: build dist publish
 
 dist:
-    mkdir -p dist
-	rm dist/*
+	mkdir -p dist
+	rm -rf dist
 	python3 setup.py sdist bdist_wheel
 
 publish:

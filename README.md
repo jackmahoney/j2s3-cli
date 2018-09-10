@@ -1,5 +1,5 @@
 # Java 2 S3 CLI
-Python CLI for publish maven projects to an S3 maven repository.
+Python CLI for publish maven projects to an S3 maven repository. Requires maven installed in your path.
 
 ## Install
 `pip install j2s3-cli`

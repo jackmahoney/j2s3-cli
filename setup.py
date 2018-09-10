@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='j2s3-cli',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/jackmahoney/j2s3-cli',
     license='Apache 2.0',
     install_requires=[
