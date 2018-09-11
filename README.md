@@ -6,14 +6,29 @@ Python CLI for publish maven projects to an S3 maven repository. Requires maven 
 
 ## Usage
 ```
-j2s3 --help
-Usage: j2s3 [OPTIONS]
+Usage: j2s3 [OPTIONS] COMMAND [ARGS]...
+
+  CLI for publish maven Java projects to an s3 maven repository
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  publish  Publish a maven project to an s3 maven...
+```
+
+```
+Usage: j2s3 publish [OPTIONS]
+
+  Publish a maven project to an s3 maven repository.  Your input directory
+  must contain valid java source and a maven pom.xml file.  Your s3 bucket
+  must exist and your IAM user must have GetObject and PutObject access.
 
 Options:
   -i TEXT  Input directory containing Java source and pom.xml file
-  -u TEXT  AWS_ACCESS_KEY_ID
-  -p TEXT  AWS_SECRET_ACCESS_KEY
-  -b TEXT  AWS S3 bucket name
+  -u TEXT  AWS_ACCESS_KEY_ID for an IAM user with s3 access
+  -p TEXT  AWS_SECRET_ACCESS_KEY for an IAM user with s3 access
+  -b TEXT  Existing AWS S3 bucket name
   --help   Show this message and exit.
 ```
 
