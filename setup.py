@@ -8,16 +8,17 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='j2s3-cli',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/jackmahoney/j2s3-cli',
     license='Apache 2.0',
     install_requires=[
         'j2s3==1.0.2',
         'click==6.7'
     ],
+    py_modules=['app'],
     entry_points='''
       [console_scripts]
-      j2s3=main:cli
+      j2s3=app:cli
     ''',
     description='A cli for publishing Java maven projects to an S3 maven repository',
     long_description=long_description,
