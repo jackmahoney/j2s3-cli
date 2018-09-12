@@ -9,6 +9,9 @@ activate:
 install:
 	pip install --editable .
 
+test: install
+	j2s3 publish -i ./resources -u username -p password -b bucketname --dry
+
 dist:
 	mkdir -p dist
 	rm -rf dist

@@ -8,11 +8,11 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='j2s3-cli',
-    version='1.0.2',
+    version='1.0.3',
     url='https://github.com/jackmahoney/j2s3-cli',
     license='Apache 2.0',
     install_requires=[
-        'j2s3==1.0.2',
+        'j2s3==1.0.3',
         'click==6.7'
     ],
     py_modules=['app'],
