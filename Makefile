@@ -10,7 +10,9 @@ install:
 	pip install --editable .
 
 test: install
-	j2s3 publish -i ./resources -u username -p password -b bucketname --dry
+	python3 -m pytest
+	j2s3 publish -l ./resources/petstore -u username -p password -b bucketname --dry
+	j2s3 publish -l ./resources/petstore -u $(AWS_ACCESS_KEY_ID) -p $(AWS_SECRET_ACCESS_KEY) -b j2s3.test.petstore
 
 dist:
 	mkdir -p dist
