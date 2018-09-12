@@ -1,7 +1,7 @@
 .PHONY: build dist publish
 
 venv:
-	virtualenv venv -p $(which python)
+	virtualenv venv -p python3
 
 activate:
 	source ./venv/bin/activate
@@ -17,6 +17,8 @@ test: install
 dist:
 	mkdir -p dist
 	rm -rf dist
+	mkdir -p j2s3_cli.egg-info
+	rm -rf j2s3_cli.egg-info
 	python3 setup.py sdist bdist_wheel
 
 publish:

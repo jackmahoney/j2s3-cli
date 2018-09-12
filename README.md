@@ -25,11 +25,12 @@ Usage: j2s3 publish [OPTIONS]
   must exist and your IAM user must have GetObject and PutObject access.
 
 Options:
-  -i TEXT  Input directory containing Java source and pom.xml file
-  -u TEXT  AWS_ACCESS_KEY_ID for an IAM user with s3 access
-  -p TEXT  AWS_SECRET_ACCESS_KEY for an IAM user with s3 access
-  -b TEXT  Existing AWS S3 bucket name
-  --help   Show this message and exit.
+  -l, --location PATH  Input directory containing Java source and pom.xml file
+  -u, --username TEXT  AWS_ACCESS_KEY_ID for an IAM user with s3 access
+  -p, --password TEXT  AWS_SECRET_ACCESS_KEY for an IAM user with s3 access
+  -b, --bucket TEXT    Existing AWS S3 bucket name
+  -d, --dry            Dry run
+  --help               Show this message and exit
 ```
 
 ## Contributing
